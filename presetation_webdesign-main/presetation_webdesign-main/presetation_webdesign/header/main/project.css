@@ -1,5 +1,8 @@
 *{
-    font-family: "Poppins",Times,serif;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 body{
     background:rgb(222, 215, 215);
@@ -189,7 +192,7 @@ body{
     gap: 10px;
     align-items: center;
     box-sizing: border-box;
-    
+    margin-bottom: 60px;
 }
 
 .new_menu{
@@ -198,10 +201,10 @@ body{
 }
 
 .food{
-    margin-right: 0;
+    margin-right: 30px;
     margin-top: 0;
-    width: 80%;
-    height: auto;
+    width: 100%;
+    height: 100%;
     z-index: 1;
     justify-self: end;
     border-radius: 10px;
@@ -213,6 +216,7 @@ body{
     align-items: center;
     border-radius: 10px;
     font-size: 80%;
+    border: none;
 }
 .butt:hover{
     background-color: #FF7700;
@@ -305,7 +309,8 @@ body{
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     padding: 60px;
     gap: 20px;
-    max-width: 450px;
+    width: 100%;
+    max-width: 500px;
 }
 .card__content--left{
     flex: 1;
@@ -411,6 +416,7 @@ body{
     background: #FF7700;
     padding: 5px 10px;
     border-radius: 5px;
+    border: none;
     margin-top: 10px;
 }
 .arrow:hover{
@@ -420,7 +426,7 @@ body{
     margin: 60px;
 }
 .about__us{
-    margin: 0;
+    margin: 250px 0;
     padding: 0;
 }
 .about__us--image{
@@ -441,13 +447,63 @@ body{
     font-size: 3em;
     color: aliceblue;
 }
-.about__text{
+.about__text,.about__ttile{
     margin-left: 60px;
 }
 .about__ttile{
     font-size: 2em;
 }
-.about__description{
+.about__description p{
     margin-top: 0;
     font-size: 100;
+}
+.aboutus__content{
+    display: flex;
+    flex: 1;
+    gap: 100px;
+}
+.about__text{
+    flex: 1;
+}
+.aboutus__image{
+    flex: 1;
+}
+.aboutus__image img{
+    width: 100%;
+    height: 100%;
+}
+.footer__section{
+    background: black;
+}
+.footer__container {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 40px;
+    color: white;
+}
+.footer__item{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 10px;
+}
+.footer__item a{
+    margin-left: 10px;
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 1em;
+}
+.footer__item--wrapper{
+    display: flex;
+    flex: 1;
+    gap: 60px;
+}
+.footer__item--follow i{
+    color: aliceblue;
+    background: #575757;
+    padding: 10px;
+    border-radius: 100%;
+    border: none;
+    margin-top: 10px;
 }
