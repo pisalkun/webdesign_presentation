@@ -1,4 +1,3 @@
-<<<<<<<< HEAD:webdesign_project/presetation_webdesign/presetation_webdesign/header/main/landing_page.css
 *{
     font-family: "Poppins", sans-serif;
     margin: 0;
@@ -8,10 +7,6 @@
 body{
     background:rgb(222, 215, 215);
 }
-========
-
-
->>>>>>>> 5cbc6cf68c1e90e173b8fc24db3800ee720b93ab:webdesign_project/presetation_webdesign/presetation_webdesign/header/main/project.css
 .box1{
     display: flex;
     width: 80%;
@@ -197,7 +192,6 @@ body{
     gap: 10px;
     align-items: center;
     box-sizing: border-box;
-<<<<<<<< HEAD:webdesign_project/presetation_webdesign/presetation_webdesign/header/main/landing_page.css
     margin-bottom: 60px;
 }
 
@@ -211,30 +205,10 @@ body{
     margin-top: 0;
     width: 100%;
     height: 100%;
-========
-    
-}
-
-.new_menu{
-    padding: 50px;
-    font-size: large;
-    align-items: center;
-}
-
-.food{
-    margin-right: 0;
-    margin-top: 0;
-    width: 80%;
-    height: auto;
->>>>>>>> 5cbc6cf68c1e90e173b8fc24db3800ee720b93ab:webdesign_project/presetation_webdesign/presetation_webdesign/header/main/project.css
     z-index: 1;
     justify-self: end;
     border-radius: 10px;
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-<<<<<<<< HEAD:webdesign_project/presetation_webdesign/presetation_webdesign/header/main/landing_page.css
-========
-    left: 30px;
->>>>>>>> 5cbc6cf68c1e90e173b8fc24db3800ee720b93ab:webdesign_project/presetation_webdesign/presetation_webdesign/header/main/project.css
 }
 .butt{
     margin: 10px;
@@ -242,10 +216,7 @@ body{
     align-items: center;
     border-radius: 10px;
     font-size: 80%;
-<<<<<<<< HEAD:webdesign_project/presetation_webdesign/presetation_webdesign/header/main/landing_page.css
     border: none;
-========
->>>>>>>> 5cbc6cf68c1e90e173b8fc24db3800ee720b93ab:webdesign_project/presetation_webdesign/presetation_webdesign/header/main/project.css
 }
 .butt:hover{
     background-color: #FF7700;
@@ -301,7 +272,6 @@ body{
 }
 .input{
   height: 30px;
-<<<<<<<< HEAD:webdesign_project/presetation_webdesign/presetation_webdesign/header/main/landing_page.css
   border-radius: 10px;
   margin-top: 15px;
   padding-right: 30px;
@@ -311,12 +281,6 @@ body{
   color: #2a2a2a;
   font-size: 15px;
   font-weight: 600;
-========
-  border-radius: 15px;
-  margin-top: 15px;
-  padding-right: 30px;
-  margin-bottom: 10px;
->>>>>>>> 5cbc6cf68c1e90e173b8fc24db3800ee720b93ab:webdesign_project/presetation_webdesign/presetation_webdesign/header/main/project.css
 }
 .dropdown{
   float: left;
@@ -335,7 +299,6 @@ body{
 
 /* for menu properties */
 
-<<<<<<<< HEAD:webdesign_project/presetation_webdesign/presetation_webdesign/header/main/landing_page.css
 .card__container {
     display: flex;
     flex-wrap: wrap;
@@ -387,83 +350,27 @@ body{
 }
 
 .food__title {
+    font-style: italic;
     margin-top: 0;
-    text-transform: uppercase;
+    font-weight: 600;
+    color: #FF7700;
 }
 
 .card__content--right span {
-========
-
-*{
-    font-family: "Poppins",Times,serif;
-}
-body{
-    background:rgb(222, 215, 215);
-}
-.card_pc{
-    display: flex;
-    background-color: rgba(255, 255, 255, 0.35);
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px); 
-    border-radius: 15px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    padding: 30px;
-    gap: 20px;
-    max-width: 100%;
-}
-.card_mobile{
-    background-color: rgba(255, 255, 255, 0.35);
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px); 
-    border-radius: 15px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    padding: 60px;
-    gap: 20px;
-    width: 100%;
-    margin: 5px;
-}
-.card__content--left{
-    flex: 1;
-}
-.card__content--right{
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-}
-.card__content--left img{
-    width: 250px;
-    border-radius: 10px;
-    height: 200px;
-}
-.food__title{
-    margin-top: 0;
-    text-transform: uppercase;
-}
-.card__content--right span{
->>>>>>>> 5cbc6cf68c1e90e173b8fc24db3800ee720b93ab:webdesign_project/presetation_webdesign/presetation_webdesign/header/main/project.css
     margin-left: 0;
     font-weight: 500;
     margin-bottom: 10px;
 }
-<<<<<<<< HEAD:webdesign_project/presetation_webdesign/presetation_webdesign/header/main/landing_page.css
 
 .info__button {
     color: white;
     background: #FF7700;
-========
-.info__button{
-    color: white;
-    background: orange;
->>>>>>>> 5cbc6cf68c1e90e173b8fc24db3800ee720b93ab:webdesign_project/presetation_webdesign/presetation_webdesign/header/main/project.css
     border: none;
     margin-top: 10px;
     padding: 5px 15px;
     border-radius: 5px;
     cursor: pointer;
 }
-<<<<<<<< HEAD:webdesign_project/presetation_webdesign/presetation_webdesign/header/main/landing_page.css
 
 .info__button:hover {
     color: #575757;
@@ -483,55 +390,6 @@ body{
 
 /* event properties */
 
-========
-.info__button:hover{
-    color: #575757;
-    background: rgb(206, 187, 151);
-}
-.card__container{
-    display: flex;
-    width: 50%;
-    justify-content: space-around;
-    gap: 20px;
-    display: grid;
-    grid-template-rows: repeat(2, 50%);
-}
-.card__content--right i{
-    color: #f8d34a;
-}
-.menu_card_pc{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
-    align-items: center;
-}
-.menu_card_mobile{
-    margin: 5px;
-    
-}
-@media (max-width: 1000px) {
-  .menu_card_pc {
-    display: none;
-  }
-  .menu_card_mobile {
-    display: flex;
-  }
-}
-@media (min-width: 1000px) {
-  .menu_card_pc {
-    display: flex;
-  }
-  .menu_card_mobile {
-    display: none;
-  }
-}
-
-/* about us properties */
-
-*{
-     font-family: "Poppins",Times,serif;
-}
->>>>>>>> 5cbc6cf68c1e90e173b8fc24db3800ee720b93ab:webdesign_project/presetation_webdesign/presetation_webdesign/header/main/project.css
 .slider__container{
     display: flex;
     justify-content: space-around;
@@ -586,16 +444,10 @@ body{
 }
 .arrow{
     color: white;
-<<<<<<<< HEAD:webdesign_project/presetation_webdesign/presetation_webdesign/header/main/landing_page.css
     background: #FF7700;
     padding: 5px 10px;
     border-radius: 5px;
     border: none;
-========
-    background: orangered;
-    padding: 5px 10px;
-    border-radius: 5px;
->>>>>>>> 5cbc6cf68c1e90e173b8fc24db3800ee720b93ab:webdesign_project/presetation_webdesign/presetation_webdesign/header/main/project.css
     margin-top: 10px;
 }
 .arrow:hover{
@@ -685,8 +537,4 @@ body{
     border-radius: 100%;
     border: none;
     margin-top: 10px;
-<<<<<<<< HEAD:webdesign_project/presetation_webdesign/presetation_webdesign/header/main/landing_page.css
 }
-========
-}
->>>>>>>> 5cbc6cf68c1e90e173b8fc24db3800ee720b93ab:webdesign_project/presetation_webdesign/presetation_webdesign/header/main/project.css
