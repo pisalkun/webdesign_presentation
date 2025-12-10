@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="intro.css">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playwrite+US+Trad+Guides&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body class="wrapper">
+    <header class="box1">
+        <img src="images/logo.png" class="logo" alt="logo" href="javascript:void(0)">
+        <div class="middle" href="javascript:void(0)">
+            <button class="content">Home</button>
+            <button class="content">Events</button>
+            <button class="content">Special Menu</button>
+            <button class="content">About Us</button>
+        </div>
+        <input type="text" placeholder="  Search here..." class="input">
+        <div class="selection" href="javascript:void(0)">
+            <button class="section1" aria-label="facebook"></button>
+            <button class="section2" aria-label="instagram"></button>
+            <button class="sign_in" onclick="window.location.href='sign_in_and_signup_page/signin.html'">Sign
+                in</button>
+        </div>
+
+    </header>
+    <div class="box2" class="nevbar">
+        <img src="images/logo.png" class="logo" alt="logo">
+        <input type="text" placeholder="  Search here..." class="input">
+        <div class="position">
+            <div class="dropdown">
+                <button class="container" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <script>
+                    function myFunction(x) {
+                        x.classList.toggle("change");
+                    }
+                </script>
+            </div>
+            <button class="sign_in" onclick="window.location.href='login/login_page.html'">Sign in</button>
+        </div>
+    </div>
+</body>
+
+<!-- New menu section: use classes (not inline style) so CSS grid applies -->
+<div class="content_new_men">
+    <div class="new_menu">
+        <h1 class="dancing-script-400-normal"><b>New menu Available</b></h1>
+        <p>Discover our latest dishes and seasonal specials.</p>
+        <button class="butt">Get now <i class="fa fa-arrow-right" aria-hidden="true"></i></i></button>
+    </div>
+    <img src="images/steak.png" alt="steak" class="food">
+</div>
+
+<!-- menu section  -->
+
+<h1 style="padding-left: 100px; padding-top: 40px;"> Our Menu</h1>
+<div class="menu_card_pc">
+    <div class="card__container">
+        <div class="card_pc">
+            <div class="card__content--left">
+                <img src="images/steak.png" alt="a picture of steak">
+            </div>
+            <div class="card__content--right">
+                <h2 class="food__title">Steak</h2>
+                <span>Price: 10$</span>
+                <span>Delivery: 1.5$</span>
+                <span>Rate:
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </span>
+                <button class="info__button">More Info</button>
+            </div>
+        </div>
+        <div class="card_pc">
+            <div class="card__content--left">
+                <img src="images/spagghetti.png" alt="a picture of steak">
+            </div>
+            <div class="card__content--right">
+                <h2 class="food__title">Spaghetti</h2>
+                <span>Price: 5$</span>
+                <span>Delivery: 1.5$</span>
+                <span>Rate:
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star-half-stroke"></i>
+                    4.5
+                </span>
+                <button class="info__button">More Info</button>
+            </div>
+        </div>
+    </div>
+    <div class="card__container">
+        <div class="card_pc">
+            <div class="card__content--left">
+                <img src="images/steak.png" alt="a picture of steak">
+            </div>
+            <div class="card__content--right">
+                <h2 class="food__title">Steak</h2>
+                <span>Price: 10$</span>
+                <span>Delivery: 1.5$</span>
+                <span>Rate:
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </span>
+                <button class="info__button">More Info</button>
+            </div>
+        </div>
+        <div class="card_pc">
+            <div class="card__content--left">
+                <img src="images/spagghetti.png" alt="a picture of steak">
+            </div>
+            <div class="card__content--right">
+                <h2 class="food__title">Spaghetti</h2>
+                <span>Price: 5$</span>
+                <span>Delivery: 1.5$</span>
+                <span>Rate:
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star-half-stroke"></i>
+                    4.5
+                </span>
+                <button class="info__button">More Info</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="menu_card_mobile">
+    <section class="slider__container" id="sliderContainer">
+        <div class="card_mobile">
+            <div class="card__content--left">
+                <img src="images/steak.png" alt="a picture of steak">
+            </div>
+            <div class="card__content--right">
+                <h2 class="food__title">Steak</h2>
+                <span>Price: 10$</span>
+                <span>Delivery: 1.5$</span>
+                <span>Rate:
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </span>
+                <button class="info__button">More Info</button>
+            </div>
+        </div>
+        <div class="card_mobile">
+            <div class="card__content--left">
+                <img src="images/spagghetti.png" alt="a picture of steak">
+            </div>
+            <div class="card__content--right">
+                <h2 class="food__title">Spaghetti</h2>
+                <span>Price: 5$</span>
+                <span>Delivery: 1.5$</span>
+                <span>Rate:
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star-half-stroke"></i>
+                    4.5
+                </span>
+                <button class="info__button">More Info</button>
+            </div>
+        </div>
+        <div class="card_mobile">
+            <div class="card__content--left">
+                <img src="images/steak.png" alt="a picture of steak">
+            </div>
+            <div class="card__content--right">
+                <h2 class="food__title">Steak</h2>
+                <span>Price: 10$</span>
+                <span>Delivery: 1.5$</span>
+                <span>Rate:
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    5
+                </span>
+                <button class="info__button">More Info</button>
+            </div>
+        </div>
+        <div class="card_mobile">
+            <div class="card__content--left">
+                <img src="images/spagghetti.png" alt="a picture of steak">
+            </div>
+            <div class="card__content--right">
+                <h2 class="food__title">Spaghetti</h2>
+                <span>Price: 5$</span>
+                <span>Delivery: 1.5$</span>
+                <span>Rate:
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star-half-stroke"></i>
+                    4.5
+                </span>
+                <button class="info__button">More Info</button>
+            </div>
+        </div>
+    </section>
+
+</div>
+<!-- about us section -->
+
+
+<h1 style="padding-left: 100px; padding-top: 40px;  ;"> Our Event</h1>
+<div class="slider__wrapper">
+    <section class="slider__container" id="sliderContainer">
+        <div class="slider">
+            <div class="element__left">
+                <div class="image__holder"></div>
+            </div>
+            <div class="element__right">
+                <h2 class="slider__title">Special Treat</h2>
+                <p class="slider__description">Celebrate the season with delicious meals delivered straight
+                    to your door—and enjoy exclusive holiday discounts! For a limited time, savor your
+                    favorite dishes at up to 30% off. Whether it’s a cozy dinner at home, a festive family
+                    gathering, or a last-minute holiday craving, we’ve got you covered. Don’t miss out—order
+                    now and make your holidays tastier and merrier!</p>
+            </div>
+        </div>
+        <div class="slider">
+            <div class="element__left">
+                <div class="image__holder"></div>
+            </div>
+            <div class="element__right">
+                <h2 class="slider__title">Join Our Exclusive Customer Event</h2>
+                <p class="slider__description">We’re thrilled to invite all our valued customers to a
+                    special event full of fun, surprises, and exclusive experiences! Join us and get a
+                    chance to win exciting tickets and enjoy amazing activities prepared just for you. Don’t
+                    miss this opportunity to celebrate, connect, and make unforgettable memories with us.
+                    RSVP now and secure your spot!</p>
+            </div>
+        </div>
+        <div class="slider">
+            <div class="element__left">
+                <div class="image__holder"></div>
+            </div>
+            <div class="element__right">
+                <h2 class="slider__title">Your Order Could Be a Winner</h2>
+                <p class="slider__description">Get ready for an exciting event where every order counts! For
+                    a limited time, every customer who places an order has a chance to win instant prizes,
+                    vouchers, or free meals. Celebrate the joy of convenient food delivery with fun
+                    challenges, surprise gifts, and exclusive offers. Order now, join the dash, and let the
+                    rewards come to you!</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const container = document.querySelector(".slider__container");
+        const slides = document.querySelectorAll(".slider");
+        const btnLeft = document.querySelector(".arrow.left");
+        const btnRight = document.querySelector(".arrow.right");
+        let currentIndex = 0;
+        const totalSlides = slides.length;
+
+        function goToSlide(index) {
+            currentIndex = index;
+            slides[currentIndex].scrollIntoView({ behavior: 'smooth', inline: 'start' });
+        }
+
+        btnRight.addEventListener('click', () => {
+            currentIndex++;
+            if (currentIndex >= totalSlides) currentIndex = 0;
+            goToSlide(currentIndex);
+        });
+
+        btnLeft.addEventListener('click', () => {
+            currentIndex--;
+            if (currentIndex < 0) currentIndex = totalSlides - 1;
+            goToSlide(currentIndex);
+        });
+
+        let autoScroll = setInterval(() => {
+            currentIndex++;
+            if (currentIndex >= totalSlides) currentIndex = 0;
+            goToSlide(currentIndex);
+        }, 10000);
+
+        let isUserScrolling = false;
+
+        container.addEventListener('scroll', () => {
+            isUserScrolling = true;
+            clearInterval(autoScroll);
+
+            setTimeout(() => {
+                if (isUserScrolling) {
+                    autoScroll = setInterval(() => {
+                        currentIndex++;
+                        if (currentIndex >= totalSlides) currentIndex = 0;
+                        goToSlide(currentIndex);
+                    }, 10000);
+                    isUserScrolling = false;
+                }
+            }, 10000);
+        });
+    </script>
+</div>
+<!-- About Section Placeholder -->
+<div id="about" class="about__us">
+    <div class="about__us--image">
+        <h1>About<br>Delivery company</h1>
+    </div>
+    <h1 class="about__ttile">From food delivery to your<br>daily convenience companion.</h1>
+    <div class="aboutus__content">
+        <div class="about__text">
+            <div class="about__description">
+                <p>
+                    A subsidiary of Delivery Hero, foodpanda launched in Singapore in 2014 as a food delivery
+                    platform. Dedicated to helping customers get their tasty favourites fast, it quickly won the
+                    hearts and minds of customers in APAC.
+                    <br>
+                    <br>
+                    <br>
+                    Powered by tech and operational excellence, foodpanda has been growing its quick-commerce
+                    footprint in more than 400 cities across 11 markets in Asia – Singapore, Hong Kong, Thailand,
+                    Malaysia, Pakistan, Taiwan, Philippines, Bangladesh, Laos, Cambodia, and Myanmar.
+                    <br>
+                    <br>
+                    <br>
+                    Thanks to dedicated partners, riders, and a team united by shared values, foodpanda is now
+                    providing millions with a convenient way to get food and groceries in a few taps.
+                </p>
+            </div>
+
+        </div>
+        <div class="aboutus__image">
+            <img src="images/delivery.jpg" alt="a picture of delivery man">
+        </div>
+    </div>
+</div>
+<!-- Smooth Scroll Script -->
+<script>
+    function scrollToSection(id) {
+        document.getElementById(id).scrollIntoView({
+            behavior: "smooth"
+        });
+    }
+</script>
+<footer class="footer__section">
+    <div class="footer__container">
+        <img src="images/logo.png" alt="logo image">
+        <div class="footer__item--wrapper">
+            <div class="footer__item">
+                <h3>Navigate</h3>
+                <a href="">Home</a>
+                <a href="">About Us</a>
+                <a href="">Event</a>
+                <a href="">Contact Us</a>
+            </div>
+            <div class="footer__item">
+                <h3>Collaborate</h3>
+                <a href="">Explore careers</a>
+                <a href="">Become a rider</a>
+                <a href="">Feed your team</a>
+            </div>
+            <div class="footer__item--follow">
+                <h3>Follow Us</h3>
+                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                <a href=""><i class="fa-brands fa-google"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</html>
