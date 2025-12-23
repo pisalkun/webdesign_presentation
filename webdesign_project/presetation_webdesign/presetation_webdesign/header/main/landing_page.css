@@ -314,6 +314,9 @@ body{
   color: #2a2a2a;
   font-size: 15px;
   font-weight: 600;
+  cursor: pointer;
+  direction:ltr;     
+    padding-left: 15px;
 }
 .dropdown{
   float: left;
@@ -350,8 +353,8 @@ body{
     padding: 15px;
     border-radius: 12px;
     background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.3);
     gap: 20px;
