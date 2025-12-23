@@ -55,6 +55,12 @@
         <input type="text" placeholder="  Search here..." class="input">
 
         <div class="position">
+            <div class="mobile-menu" id="mobileMenu">
+                <button onclick="scrollToSection('home')">Home</button>
+                <button onclick="scrollToSection('events')">Events</button>
+                <button onclick="scrollToSection('menu')">Menu</button>
+                <button onclick="scrollToSection('about')">About</button>
+            </div>
             <div class="dropdown">
                 <button class="container" onclick="myFunction(this)">
                     <div class="bar1"></div>
@@ -66,12 +72,13 @@
 
             <button class="sign_in" onclick="window.location.href='login/login_page.html'">Sign in</button>
         </div>
-
         <script>
             function myFunction(x) {
                 x.classList.toggle("change");
+                document.getElementById("mobileMenu").classList.toggle("show");
             }
         </script>
+
     </div>
 
     <!-- Home Section -->
@@ -105,7 +112,7 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i> 5
                     </span>
-                    <button class="info__button">More Info</button>
+                    <button class="info__button">Order Now</button>
                 </div>
             </div>
         </section>
@@ -125,7 +132,7 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-regular fa-star-half-stroke"></i> 4.5
                     </span>
-                    <button class="info__button">More Info</button>
+                    <button class="info__button">Order Now</button>
                 </div>
             </div>
         </section>
@@ -148,7 +155,7 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i> 5
                     </span>
-                    <button class="info__button">More Info</button>
+                    <button class="info__button">Order Now</button>
                 </div>
             </div>
         </section>
@@ -169,7 +176,7 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-regular fa-star-half-stroke"></i> 4.5
                     </span>
-                    <button class="info__button">More Info</button>
+                    <button class="info__button">Order Now</button>
                 </div>
             </div>
         </section>
