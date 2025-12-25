@@ -7,6 +7,7 @@
 body{
     background:rgb(222, 215, 215);
 }
+/*Navbar section*/
 .box1{
     display: flex;
     width: 80%;
@@ -14,7 +15,7 @@ body{
     height: 66px;
     border-radius: 10px;
     width: 100%;
-    box-shadow: 0px 4px 10px rgba(-1,-2,0,1);
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
     align-items: center;
     display: block;
     display: grid;
@@ -29,12 +30,12 @@ body{
     text-decoration: none;
 }
 .navbar a:hover {
-  background-color: #ddd;
-  color: black;
+  background-color: #f3a460;
+  color: #2a2a2a;
 }
 
 .navbar a.active {
-  background-color: #04AA6D;
+  background-color: #FF7700;
   color: white;
 }
 .box2{
@@ -43,11 +44,11 @@ body{
     height: 80px;
     border-radius: 10px;
     width: 100%;
-    box-shadow: 0px 4px 10px rgba(-1,-2,0,1);
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
     align-items: center;
     display: none;
     display: grid;
-    grid-template-columns: 15% 35% 50%; ; 
+    grid-template-columns: 15% 35% 50%; 
     position: fixed;
     z-index: 100;
     right: 0; 
@@ -172,7 +173,6 @@ body{
 .content{
     height: inherit;
     color: #575757; 
-    background-color:#f3a460;
     border: none;
     background: none;
     border: none;
@@ -217,6 +217,8 @@ body{
     width: 40%;
     height: auto;
 }  
+
+/*Home section*/
 .content_new_men{
     width: 100%;
     padding-top: 90px;
@@ -241,7 +243,7 @@ body{
     z-index: 1;
     justify-self: end;
     border-radius: 10px;
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
 .butt{
     margin: 10px;
@@ -316,7 +318,7 @@ body{
   font-weight: 600;
   cursor: pointer;
   direction:ltr;     
-    padding-left: 15px;
+  padding-left: 15px;
 }
 .dropdown{
   float: left;
@@ -409,8 +411,8 @@ body{
 }
 
 .info__button:hover {
-    color: #575757;
-    background: rgb(206, 187, 151);
+    color: white;
+    background: #FF6F00;
 }
 
 @media (max-width: 600px) {
@@ -487,7 +489,7 @@ body{
     margin-top: 10px;
 }
 .arrow:hover{
-    background-color: rgb(255, 111, 0);
+    background-color: #FF6F00;
 }
 .slider__wrapper{
     margin: 60px;
@@ -547,7 +549,7 @@ body{
     align-items: flex-start;
     gap: 40px;
     padding: 40px;
-    color: white;
+    color: aliceblue;
 }
 .footer__item{
     display: flex;
