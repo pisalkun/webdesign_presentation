@@ -1,12 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
-    <!-- CSS Files -->
     <link rel="stylesheet" href="landing_page.css">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -23,9 +20,7 @@
         }
     </style>
 </head>
-
-<body class="wrapper">
-
+<body>
     <!-- Header -->
     <header class="box1">
         <img src="images/logo.png" class="logo" alt="logo">
@@ -34,11 +29,10 @@
 
         <!-- UPDATED NAVBAR BUTTONS -->
         <div class="middle">
-            <a class="content" href="#home">Home</a>
-            <a class="content" href="#events">Event</a>
-            <a class="content" href="#menu">Special Menu</a>
-            <a class="content" href="#about">About Us</a>
-        </div>
+            <a class="content" href="landing_page.html#home">Home</a>
+            <a class="content" href="landing_page.html#events">Event</a>
+            <a class="content" href="landing_page.html#menu">Special Menu</a>
+            <a class="content" href="landing_page.html#about">About Us</a>
         </div>
 
         <div class="selection">
@@ -55,10 +49,10 @@
 
         <div class="position">
             <div class="mobile-menu" id="mobileMenu">
-                <a class="content" href="#home">Home</a>
-                <a class="content" href="#events">Event</a>
-                <a class="content" href="#menu">Special Menu</a>
-                <a class="content" href="#about">About Us</a>
+                <a class="content" href="landing_page.html#home">Home</a>
+                <a class="content" href="landing_page.html#events">Event</a>
+                <a class="content" href="landing_page.html#menu">Special Menu</a>
+                <a class="content" href="landing_page.html#about">About Us</a>
             </div>
             <div class="dropdown">
                 <button class="container" onclick="myFunction(this)">
@@ -79,21 +73,8 @@
         </script>
 
     </div>
-
-    <!-- Home Section -->
-    <div class="content_new_men" id="home">
-        <div class="new_menu">
-            <h1 class="dancing-script-400-normal"><b>New menu Available</b></h1>
-            <p>Discover our latest dishes and seasonal specials, made with fresh ingredients and unique flavors. Try our chef’s newest creations, enjoy limited-time offers, and experience a menu that changes with the season to bring something exciting to every meal.</p>
-            <button class="butt" onclick="scrollToSection('menu')">Get now <i class="fa fa-arrow-right"></i></button>
-        </div>
-
-        <img src="images/steak.png" alt="steak" class="food">
-    </div>
-
-    <!-- Menu Section -->
+    <div class="navbar-spacer"></div>
     <h1 id="menu" style="padding-left: 100px; padding-top: 40px;">Our Menu</h1>
-
     <div class="card__container">
         <section class="card__holder">
             <div class="card">
@@ -180,141 +161,136 @@
             </div>
         </section>
     </div>
-    <div class="view__btn--container">
-        <a class="view__menu--more" href="menu.html">View More</a>
-    </div>
-
-    <!-- Event Section -->
-    <h1 id="events" style="padding-left: 100px; padding-top: 40px;">Our Event</h1>
-
-    <div class="slider__wrapper">
-        <section class="slider__container" id="sliderContainer">
-
-            <div class="slider">
-                <div class="element__left">
-                    <img src="images/event1.jpg" alt="a picture" class="image__holder">
+    <div class="card__container">
+        <section class="card__holder">
+            <div class="card">
+                <div class="card__content--left">
+                    <img src="images/Tapas.jpg" alt="a picture of Tapas">
                 </div>
-                <div class="element__right">
-                    <h2 class="slider__title">Special Treat</h2>
-                    <p class="slider__description">
-                        Celebrate the season with delicious meals delivered straight to your door—and enjoy exclusive holiday discounts!
-                    </p>
-                </div>
-            </div>
-
-            <div class="slider">
-                <div class="element__left">
-                    <img src="images/event2.jpg" alt="picture" class="image__holder">
-                </div>
-                <div class="element__right">
-                    <h2 class="slider__title">Join Our Exclusive Customer Event</h2>
-                    <p class="slider__description">
-                        We’re thrilled to invite all our valued customers to a special event full of fun, surprises, and exclusive experiences!
-                    </p>
+                <div class="card__content--right">
+                    <h2 class="food__title">Tapas</h2>
+                    <span>Price: 7.5$</span>
+                    <span>Delivery: 1.5$</span>
+                    <span>Rate:
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i> 5
+                    </span>
+                    <button class="info__button">Order Now</button>
                 </div>
             </div>
-
-            <div class="slider">
-                <div class="element__left">
-                    <img src="images/event3.png" alt=" picture" class="image__holder">
-                </div>
-                <div class="element__right">
-                    <h2 class="slider__title">Your Order Could Be a Winner</h2>
-                    <p class="slider__description">
-                        Get ready for an exciting event where every order counts!
-                    </p>
-                </div>
-            </div>
-
         </section>
 
-        <div class="slider__arrow">
-            <button class="arrow left"><b><</b></button>
-            <button class="arrow right"><b>></b></button>
-        </div>
-
-        <script>
-            const container = document.querySelector(".slider__container");
-            const slides = document.querySelectorAll(".slider");
-            const btnLeft = document.querySelector(".arrow.left");
-            const btnRight = document.querySelector(".arrow.right");
-
-            let currentIndex = 0;
-            const totalSlides = slides.length;
-
-            function goToSlide(index) {
-                currentIndex = index;
-                    container.scrollTo({
-                        left: slides[currentIndex].offsetLeft,
-                        behavior: "smooth"
-                    }
-                );
-            }
-
-            btnRight.addEventListener('click', () => {
-                currentIndex = (currentIndex + 1) % totalSlides;
-                goToSlide(currentIndex);
-            });
-
-            btnLeft.addEventListener('click', () => {
-                currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
-                goToSlide(currentIndex);
-            });
-
-            let autoScroll = setInterval(() => {
-                currentIndex = (currentIndex + 1) % totalSlides;
-                goToSlide(currentIndex);
-            }, 10000);
-
-            container.addEventListener('scroll', () => {
-                clearInterval(autoScroll);
-                autoScroll = setTimeout(() => {
-                    autoScroll = setInterval(() => {
-                        currentIndex = (currentIndex + 1) % totalSlides;
-                        goToSlide(currentIndex);
-                    }, 10000);
-                }, 10000);
-            });
-        </script>
-    </div>
-
-    <!-- About Section Placeholder -->
-    <div id="about" class="about__us">
-        <div class="about__us--image">
-            <h1>About<br>Delivery company</h1>
-        </div>
-        <h1 class="about__ttile">From food delivery to your<br>daily convenience companion.</h1>
-        <div class="aboutus__content">   
-            <div class="about__text">
-                    <div class="about__description">
-                     <p>
-                            A subsidiary of Delivery Hero, foodpanda launched in Singapore in 2014 as a food delivery platform.  Dedicated to helping customers get their tasty favourites fast, it quickly won the hearts and minds of customers in APAC.
-                            <br>
-                            <br>
-                            <br>
-                            Powered by tech and operational excellence, foodpanda has been growing its quick-commerce footprint in more than 400 cities across 11 markets in Asia – Singapore, Hong Kong, Thailand, Malaysia, Pakistan, Taiwan, Philippines, Bangladesh, Laos, Cambodia, and Myanmar. 
-                            <br>
-                            <br>
-                            <br>
-                            Thanks to dedicated partners, riders, and a team united by shared values,  foodpanda is now providing millions with a convenient way to get food and groceries in a few taps.
-                        </p>
-                    </div>
-    
+        <section class="card__holder">
+            <div class="card">
+                <div class="card__content--left">
+                    <img src="images/sandwich.jpg" alt="a picture of sandwich">
+                </div>
+                <div class="card__content--right">
+                    <h2 class="food__title">Sandwich</h2>
+                    <span>Price: 5$</span>
+                    <span>Delivery: 1.5$</span>
+                    <span>Rate:
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i> 4.5
+                    </span>
+                    <button class="info__button">Order Now</button>
+                </div>
             </div>
-            <div class="aboutus__image">
-                <img src="images/delivery.jpg" alt="a picture of delivery man">
-            </div>
-        </div>
+        </section>
     </div>
-    <!-- Smooth Scroll Script -->
-    <script>
-        function scrollToSection(id) {
-            document.getElementById(id).scrollIntoView({
-                behavior: "smooth"
-            });
-        }
-    </script>
-    <footer class="footer__section"> 
+    <div class="card__container">
+        <section class="card__holder">
+            <div class="card">
+                <div class="card__content--left">
+                    <img src="images/Burrito.JPG" alt="a picture of Burrito">
+                </div>
+                <div class="card__content--right">
+                    <h2 class="food__title">Burrito</h2>
+                    <span>Price: 8$</span>
+                    <span>Delivery: 1.5$</span>
+                    <span>Rate:
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i> 5
+                    </span>
+                    <button class="info__button">Order Now</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="card__holder">
+            <div class="card">
+                <div class="card__content--left">
+                    <img src="images/Fish&Chips.jpg" alt="a picture of Fish&chip">
+                </div>
+                <div class="card__content--right">
+                    <h2 class="food__title">Fish and Chips</h2>
+                    <span>Price: 5.5$</span>
+                    <span>Delivery: 1.5$</span>
+                    <span>Rate:
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i> 4.5
+                    </span>
+                    <button class="info__button">Order Now</button>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="card__container">
+        <section class="card__holder">
+            <div class="card">
+                <div class="card__content--left">
+                    <img src="images/IrishStew.jpg" alt="a picture of IrishStew">
+                </div>
+                <div class="card__content--right">
+                    <h2 class="food__title">Irish Stew</h2>
+                    <span>Price: 9$</span>
+                    <span>Delivery: 1.5$</span>
+                    <span>Rate:
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i> 5
+                    </span>
+                    <button class="info__button">Order Now</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="card__holder">
+            <div class="card">
+                <div class="card__content--left">
+                    <img src="images/Paella.jpg" alt="a picture of Paella">
+                </div>
+                <div class="card__content--right">
+                    <h2 class="food__title">Paella</h2>
+                    <span>Price: 5$</span>
+                    <span>Delivery: 1.5$</span>
+                    <span>Rate:
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i> 4.5
+                    </span>
+                    <button class="info__button">Order Now</button>
+                </div>
+            </div>
+        </section>
+    </div>
+<footer class="footer__section"> 
             <div class="footer__container">
                 <img src="images/logo.png" alt="logo image">
                 <div class="footer__item--wrapper">

@@ -9,22 +9,19 @@ body{
 }
 /*Navbar section*/
 .box1{
-    display: flex;
-    width: 80%;
+    width: 100%;
     justify-content: space-between;
     height: 66px;
-    border-radius: 10px;
-    width: 100%;
     box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
     align-items: center;
-    display: block;
     display: grid;
     grid-template-columns: 25% 50% 25%;
     position: fixed;
-    z-index: 100;
-    right: 0;
+    z-index: 1000;
     left: 0;
+    top: 0;
     background-color: white;
+    margin-top: 0;
 }
 .nevbar{
     text-decoration: none;
@@ -39,20 +36,18 @@ body{
   color: white;
 }
 .box2{
-    display: none;
     justify-content: space-between;
     height: 80px;
     border-radius: 10px;
     width: 100%;
     box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
     align-items: center;
-    display: none;
     display: grid;
     grid-template-columns: 15% 35% 50%; 
     position: fixed;
-    z-index: 100;
-    right: 0; 
+    z-index: 1000;
     left: 0;
+    top: 0;
     background-color: white;
     right:25px
 }
@@ -88,6 +83,9 @@ body{
 
 .mobile-menu.show {
     display: block;
+}
+.navbar-spacer {
+    height: 66px;
 }
 @media (max-width: 1000px) {
   .box1 {
@@ -169,6 +167,7 @@ body{
     height: 100%;
     gap: 5px;
     align-items: center;
+    margin-top: 40px;
 }
 .content{
     height: inherit;
@@ -182,6 +181,7 @@ body{
     position: relative;
     border-radius: 8px; 
     transition: transform 0.3s ease;
+    text-decoration: none;
 }
 .content:hover{
     color: #2a2a2a;
@@ -290,11 +290,6 @@ body{
 
 .change .bar3 {
   transform: translate(0, -11px) rotate(45deg);
-}
-.position{
-    display: grid;
-    grid-template-columns: 5% 95%;
-    gap: 5px;
 }
 #navbar a {
   float: left;
@@ -425,7 +420,21 @@ body{
         height: 180px;
     }
 }
-
+.view__menu--more{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: aliceblue;
+  background-color: #FF7700;
+  margin-left: 450px;
+  margin-right: 450px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.view__menu--more:hover{
+  background-color: #FF6F00;
+}
 /* event properties */
 
 .slider__container{
